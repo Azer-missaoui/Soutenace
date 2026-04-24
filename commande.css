@@ -1,0 +1,39 @@
+body{
+    font-family: Arial;
+    background: #f5f7fa;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th{
+    background: #222;
+    color: white;
+}
+
+tr:hover{
+    background: #f1f1f1;
+}
