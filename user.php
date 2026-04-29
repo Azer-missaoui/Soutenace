@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+// 🔐 vérifier login
+if(!isset($_SESSION["user_name"])){
+    header("Location: login.php");
+    exit();
+}
+
+$username = $_SESSION["user_name"];
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,11 +23,13 @@
 
 <nav>
     <h1>MyShop</h1>
-    <div class="user">👤 User</div>
+
+    <!-- 👤 AFFICHAGE USER -->
+    <div class="user">👤 <?= $username ?></div>
 </nav>
 
 <section class="hero">
-    <h2>Bienvenue dans votre espace</h2>
+    <h2>Bienvenue <?= $username ?> 👋</h2>
     <p>Gérez vos commandes et votre profil facilement</p>
 </section>
 
@@ -23,7 +37,7 @@
 
     <div class="card">
         <h3>🛒 Mes commandes</h3>
-        <a href="commande.php"><button> Voir</button></a>
+        <a href="commande.php"><button>Voir</button></a>
     </div>
 
     <div class="card">
@@ -33,15 +47,13 @@
     </div>
 
     <div class="card">
-        <h3>👤 Products</h3>
-        <a href="produit.html"><p>Voir les produits disponibles</p></a>
-        <button>Modifier</button>
+        <h3>📦 Produits</h3>
+        <a href="produit.html"><button>Voir</button></a>
     </div>
 
     <div class="card">
         <h3>⚙️ Paramètres</h3>
-        <p>Gestion du compte</p>
-        <button>Ouvrir</button>
+        <a href="Monrprofil.php"><button >Ouvrir</button></a>
     </div>
 
 </section>

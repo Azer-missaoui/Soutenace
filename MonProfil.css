@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container{
+    width: 60%;
+    margin: 40px auto;
+}
+
+/* CARD */
+.card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button{
+    padding: 10px 15px;
+    border: none;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* logout */
+.logout{
+    background: red;
+    color: white;
+}
+
+/* edit */
+.edit{
+    background: #4facfe;
+    color: white;
+}
+
+/* delete */
+.danger{
+    background: #333;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.05);
+}

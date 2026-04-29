@@ -9,7 +9,7 @@ if(empty($name)||empty($gmail)|| empty($pass)||empty($num)){
 }
 else{
 
-$sql="INSERT INTO users (nom,gmail,password,num) VALUES('$name','$gmail','$pass','$num')";
+$sql="INSERT INTO user (nom,gmail,password,num) VALUES('$name','$gmail','$pass','$num')";
 mysqli_query($conn,$sql);
 echo "Registration success";
 }

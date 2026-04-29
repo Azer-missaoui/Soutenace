@@ -37,3 +37,20 @@ th{
 tr:hover{
     background: #f1f1f1;
 }
+.pr button{
+
+    padding: 10px 15px;
+    border: none;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.pr button:hover{
+    transform: scale(1.05);
+}
+
+.pr img:hover{
+    transform: scale(1.1);
+}
