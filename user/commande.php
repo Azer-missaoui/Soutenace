@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("database.php");
+include("../database.php");
 
 if(!isset($_SESSION["user_id"])){
     die("Utilisateur non connecté");
@@ -32,7 +32,7 @@ $total = 0;
 <head>
     <meta charset="UTF-8">
     <title>Mes commandes</title>
-    <link rel="stylesheet" href="commande.css">
+    <link rel="stylesheet" href="../commande.css">
 </head>
 <body>
 

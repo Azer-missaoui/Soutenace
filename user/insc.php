@@ -1,5 +1,5 @@
 <?php
-include("database.php");
+include("../database.php");
 $name=$_POST["nom"];
 $gmail=$_POST["Email"];
 $num=$_POST["num"];

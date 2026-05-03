@@ -55,6 +55,10 @@ $username = $_SESSION["user_name"];
         <h3>⚙️ Paramètres</h3>
         <a href="Monrprofil.php"><button >Ouvrir</button></a>
     </div>
+    <div class="card">
+        <h3>Contacts</h3>
+        <a href="../Contact.html"><button >Ouvrir</button></a>
+    </div>
 
 </section>
 
